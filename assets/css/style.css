@@ -1,0 +1,23 @@
+body {   
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+img {
+    height: 200px;
+    width: 300px;
+}
+
+.text-white {
+    font-family: 'Florence', cursive;
+}
+
+.players-image {
+    height: 300px;
+    width: 300px;
+}
+
+h4 {
+    color: red;
+}

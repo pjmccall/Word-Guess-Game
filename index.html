@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset='UTF-8'>
+    <title>Guess the Legend</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class='jumbotron bg-danger text-center'>
+        <div class='container'>
+            <img class="img-thumbnail" src="assets/javascript/images/nba.jpg" alt="NBA logo">
+            <h1 class='text-white'>LEGENDS</h1>
+            <br>
+            <h3 class='text-white'>Can you guess the name of this NBA legend?</h3>
+            <br>
+            <h6 class='text-white'>Press any letter to get started!</h6>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 text-primary">
+
+          <div class="card card-default bg-light text-center">
+            <div class="card-heading">
+              <h3 class="card-title"><strong>Word to Guess - Legends Last Name</strong></h3>
+            </div>
+
+            <div class="card-body">
+
+              <h3 id="answer-key">_ _ _ _ _ _ _</h3> 
+              <br>
+
+              <!-- Appears at 6 guesses left -->
+              <h4>Clue 1</h4>
+              <div id="firstClue"></div>
+              <br>
+
+              <!-- Appears at 4 guesses left -->
+              <h4>Clue 2</h4> 
+              <div id="secondClue"></div>
+              <br>
+
+              <!-- Appears at 2 guesses left -->
+              <h4>Clue 3 (Picture Clue)</h4> 
+              <div id="players-image"></div>
+              <br>  
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="card card-default text-primary bg-light">
+            <div class="card-body">
+
+                <i>Number of Guesses Remaining:&nbsp;&nbsp;</i> <span id="numGuesses">7</span>
+
+            </div>
+    
+            </div>
+    
+          <br>          
+            
+          <div class="card card-default text-danger bg-light">
+            <div class="card-body">
+
+              <i>Letters Already Guessed:&nbsp;&nbsp;</i> <span id="wrongGuesses"></span>
+
+            </div>
+          </div>
+
+          <br>
+
+          <div class="card card-default text-primary bg-light">
+
+            <div class="card-body">
+
+              <i>Total Wins:&nbsp;&nbsp;</i> <span id="win-count">0</span>
+
+            </div>
+
+          </div>
+
+          <br>
+
+          <div class="card card-default text-danger bg-light">
+            <div class="card-body">
+              
+              <i>Total Losses:&nbsp;&nbsp;</i> <span id="loss-count">0</span>
+
+            </div>
+
+          </div>
+        </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JS Script -->
+    <script src="assets\javascript\game.js"></script>
+
+  </body>
+
+</html>
+
